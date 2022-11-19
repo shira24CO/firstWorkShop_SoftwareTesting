@@ -37,7 +37,7 @@ public class SumPositives {
         int res = sumPositive(arr);
         return res == expected;
     }
- 
+ @Test
     public static void main(){
         System.out.println("Check all: ");
         boolean f= empty_arr(), s = one_element(), t = two_elements();
