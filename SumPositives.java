@@ -13,13 +13,13 @@ public class SumPositives {
         return sum;
     }
 
-    @Test
+ 
     public static boolean empty_arr(){
         int[] arr = new int[0];
         int res = sumPositive(arr), expected = 0;
         return res == expected;
     }
-    @Test
+  
     public static boolean one_element(){
         Random rd = new Random();
         int[] arr = new int[1];
@@ -27,7 +27,7 @@ public class SumPositives {
         int res = sumPositive(arr), expected = Math.max(arr[0], 0);
         return res == expected;
     }
-    @Test
+ 
     public static boolean two_elements(){
         Random rd = new Random();
         int[] arr = new int[2];
@@ -37,7 +37,7 @@ public class SumPositives {
         int res = sumPositive(arr);
         return res == expected;
     }
-    @Test
+   
     public static void main(){
         System.out.println("Check all: ");
         boolean f= empty_arr(), s = one_element(), t = two_elements();
